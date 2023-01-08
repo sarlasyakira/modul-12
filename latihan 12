@@ -22,6 +22,8 @@ int main() {
   cout << "Name : " << data.info.name << "\nRoll : " << data.name;
 }
 
+https://app.diagrams.net/#Hsarlasyakira%2Flatihan1%2Fmain%2FUntitled%20Diagram.drawio
+
 2)
 #include <iostream>
 using namespace std;
