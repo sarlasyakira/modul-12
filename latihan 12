@@ -1,0 +1,72 @@
+modul 12
+1) Pseudo code yang benarnya.
+#include <iostream>
+using namespace std;
+
+struct name {
+  char name[20];
+};
+
+struct roll {
+  char name[20];
+  struct name info;
+} data;
+
+int main() {
+  cout << "Enter student name : ";
+  cin >> data.info.name;
+  cout << "Enter student Roll : ";
+  cin >> data.name;
+
+  cout << "\n\n---Data Store Completed---\n\n";
+  cout << "Name : " << data.info.name << "\nRoll : " << data.name;
+}
+
+2)
+#include <iostream>
+using namespace std;
+struct mhs {
+  char nama[20], nim[10], matkul[15];
+  int sks;
+};
+
+int main() {
+  mhs bayar[2];
+  int bts, var, tetap;
+  for (int i = 0; i < 2; i++) {
+    // Input data
+    cout << "\n\n-------------------------------\n";
+    cout << "\nNama mhs = ";
+    cin >> bayar[i].nama;
+    cout << "NIM = ";
+    cin >> bayar[i].nim;
+    cout<<"mata kuliah = ";
+    cin>>bayar[i].matkul;
+    cout<<"jumlah sks = ";
+    cin>>bayar[i].sks;
+ if(bayar[i].sks==0||bayar[i].sks>=2){
+      cout << "Program tidak sesuai" << endl;
+      continue;
+ } else if (bayar[i].sks==0){
+      tetap = 250000;
+      var = bayar[i].sks * tetap;
+ }
+   else if (bayar[i].sks==0){
+      tetap = 300000;
+      var = bayar[i].sks * tetap;
+   }
+   cout<<endl;
+
+ //Output data
+ cout<<"\n\n-------------------------------\n";
+ cout<<" Output ";
+ cout<<"\n-------------------------------\n";
+ cout<<"\nNama mhs = "<<bayar[i].nama;
+ cout<<"\nNIM = "<<bayar[i].nim;
+ cout<<"\nMata Kuliah = "<<bayar[i].matkul;
+ cout<<"\nJumlah sks = "<<bayar[i].sks;
+ cout<<"\nSPP tetap = "<<tetap;
+ cout<<"\nSPP variabel = "<<var;
+ cout<<endl<<endl;
+  }
+}
